@@ -60,7 +60,7 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/docusaurus.svg`} />
+        <Logo img_src={`${baseUrl}img/logo_blau_weiss.png`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
@@ -93,15 +93,13 @@ class Index extends React.Component {
     );
 
     const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
+      <div/>
+/*         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
         <h2>Features</h2>
         <MarkdownBlock>
-          - bi-temporal data storage for No SQL and SQL data stores
-
-        </MarkdownBlock>
-      </div>
+          
+        </MarkdownBlock> </div>*/
     );
 
     const TryOut = () => (
@@ -109,23 +107,23 @@ class Index extends React.Component {
         {[
           {
             content: 'Talk about trying this out',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/trackchanges.svg`,
             imageAlign: 'left',
-            title: 'Try it Out',
+            title: 'Keep track of all the changes',
           },
         ]}
       </Block>
     );
 
     const Description = () => (
-      <Block background="dark">
+      <Block background="light">
         {[
           {
             content:
               'This is another description of how this project is useful',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/usages.svg`,
             imageAlign: 'right',
-            title: 'Description',
+            title: 'Example use cases',
           },
         ]}
       </Block>
@@ -136,28 +134,46 @@ class Index extends React.Component {
         {[
           {
             content: 'Talk about learning how to use this',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/howto.svg`,
             imageAlign: 'right',
-            title: 'Learn How',
+            title: 'Learn How to use Barbel Histo Core',
           },
         ]}
       </Block>
     );
 
     const Features = () => (
-      <Block layout="twoColumn">
+      <Block layout="threeColumn">
         {[
           {
-            content: 'Get started within minutes',
-            image: `${baseUrl}img/logo_blau_weiss.png`,
+            content: 'Barbel histo core is a bitemporal in-memory data storage API. It keeps track of two time dimensions: effective time and record time.',
+            image: `${baseUrl}img/bitemporal.svg`,
             imageAlign: 'top',
-            title: 'Simple API',
+            title: 'Bitemporal data management',
           },
           {
-            content: 'Build to scale with your demands',
-            image: `${baseUrl}img/logo_blau_weiss.png`,
+            content: 'Because Barbel Histo Core provides in-memory transaction isolation to support business critical applications.',
+            image: `${baseUrl}img/inmemory.svg`,
             imageAlign: 'top',
-            title: 'Scalable',
+            title: 'In-memory transactions',
+          },
+          {
+            content: 'Built on Google\'s ultra-fast collection framework, Barbel Histo allows high-end performance batch processing operations.',
+            image: `${baseUrl}img/cqengine.svg`,
+            imageAlign: 'top',
+            title: 'Powered by cqengine',
+          },
+          {
+            content: 'Barbel core API can be used in various flavours. As full data storage API for microservices, as well as simple API to manage your bitemporal data. All functions are provided by a simple API.',
+            image: `${baseUrl}img/getstarted.svg`,
+            imageAlign: 'top',
+            title: 'Gets you started in minutes',
+          },
+          {
+            content: 'Although it\'s not mandatory to operate with persistence storage backends, an SPI persistence provider endpoint is build-in. This allows to use Barbel Histo Core as single Pojo-based persistence layer.',
+            image: `${baseUrl}img/database.svg`,
+            imageAlign: 'top',
+            title: 'Built-in persistence support',
           },
         ]}
       </Block>
