@@ -64,9 +64,9 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="#try">Maven Central</Button>
-            <Button href={docUrl('doc1.html')}>Getting Started</Button>
+            <Button href={docUrl('doc1.html')}>Get Started</Button>
             <Button href={docUrl('doc2.html')}>Github</Button>
+            <Button href="#try">Maven Central</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -146,13 +146,13 @@ class Index extends React.Component {
       <Block layout="threeColumn">
         {[
           {
-            content: 'Barbel histo core is a bitemporal in-memory data storage API. It keeps track of two time dimensions: effective time and record time.',
+            content: 'Barbel Histo Core is a bitemporal in-memory data storage API. It keeps track of two time dimensions: effective time and record time.',
             image: `${baseUrl}img/bitemporal.svg`,
             imageAlign: 'top',
             title: 'Bitemporal data management',
           },
           {
-            content: 'Because Barbel Histo Core provides in-memory transaction isolation to support business critical applications.',
+            content: 'Barbel Histo Core provides in-memory transaction isolation to support business critical applications.',
             image: `${baseUrl}img/inmemory.svg`,
             imageAlign: 'top',
             title: 'In-memory transactions',
@@ -164,7 +164,7 @@ class Index extends React.Component {
             title: 'Powered by cqengine',
           },
           {
-            content: 'Barbel core API can be used in various flavours. As full data storage API for microservices, as well as simple API to manage your bitemporal data. All functions are provided by a simple API.',
+            content: 'Barbel core API can be used in various flavours. As full data storage API for microservices, as well as simple user-friendly API to manage your bitemporal data. All functions are provided by a simple API.',
             image: `${baseUrl}img/getstarted.svg`,
             imageAlign: 'top',
             title: 'Gets you started in minutes',

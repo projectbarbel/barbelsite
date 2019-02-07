@@ -21,16 +21,16 @@
 // ];
 
 const siteConfig = {
-  title: 'Project Barbel', // Title for your website.
+  title: 'Barbel Histo', // Title for your website.
   tagline: 'Bitemporal data processing made easy',
   url: 'http://www.projectbarbel.org', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  baseUrl: '/barbelhisto-core/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'projectbarbel',
+  projectName: 'barbelhisto-core',
   organizationName: 'projectbarbel',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
