@@ -133,7 +133,7 @@ class Index extends React.Component {
       <Block background="light">
         {[
           {
-            content: 'Talk about learning how to use this',
+            content: 'Drive through the documentation to get started. Explore the different use cases of using Barbel Histo Core as your primary bitemporal data management API.',
             image: `${baseUrl}img/howto.svg`,
             imageAlign: 'right',
             title: 'Learn How to use Barbel Histo Core',

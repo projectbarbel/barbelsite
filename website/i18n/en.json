@@ -5,33 +5,73 @@
     "previous": "Previous",
     "tagline": "Bitemporal data processing made easy",
     "docs": {
-      "doc1": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
+      "about": {
+        "title": "About",
+        "sidebar_label": "About"
       },
-      "doc2": {
-        "title": "document number 2"
+      "acknowledge": {
+        "title": "Acknowledgements",
+        "sidebar_label": "Acknowledgements"
       },
-      "doc3": {
-        "title": "This is document number 3"
+      "download": {
+        "title": "Download",
+        "sidebar_label": "Download"
       },
       "doc4": {
         "title": "Other Document"
       },
       "doc5": {
         "title": "Fifth Document"
+      },
+      "examples": {
+        "title": "Barbel Histo Policy Management Service"
+      },
+      "getstarted": {
+        "title": "Twenty Seconds Tutorial",
+        "sidebar_label": "Twenty Seconds Tutorial"
+      },
+      "inmemory": {
+        "title": "In Memory Usage",
+        "sidebar_label": "In Memory Usage"
+      },
+      "license": {
+        "title": "License",
+        "sidebar_label": "License"
+      },
+      "modes": {
+        "title": "BarbelHisto modes",
+        "sidebar_label": "Pojo and Bitemporal support"
+      },
+      "persistence": {
+        "title": "Persistent Collections",
+        "sidebar_label": "Persistent Collections"
+      },
+      "release": {
+        "title": "Release notes",
+        "sidebar_label": "Release notes"
+      },
+      "repo": {
+        "title": "Source Repository",
+        "sidebar_label": "Source Repository"
+      },
+      "support": {
+        "title": "Getting Support",
+        "sidebar_label": "Getting Support"
+      },
+      "usecases": {
+        "title": "How to use Barbel Histo"
       }
     },
     "links": {
       "Docs": "Docs",
       "API": "API",
-      "Help": "Help",
-      "Blog": "Blog"
+      "Help": "Help"
     },
     "categories": {
-      "Docusaurus": "Docusaurus",
-      "First Category": "First Category",
-      "Second Category": "Second Category"
+      "Barbel Histo": "Barbel Histo",
+      "Documentation": "Documentation",
+      "Project Details": "Project Details",
+      "Getting Started": "Getting Started"
     }
   },
   "pages-strings": {
