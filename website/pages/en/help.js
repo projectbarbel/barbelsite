@@ -21,17 +21,19 @@ function Help(props) {
 
   const supportLinks = [
     {
-      content: `Learn more using the [documentation on this site.](${docUrl(
-        'doc1.html',
+      content: `Learn more and [get started.](${docUrl(
+        'readme.html',
       )})`,
-      title: 'Browse Docs',
+      title: 'Get started',
     },
     {
-      content: 'Ask questions about the documentation and project',
+      content: `[Ask questions](https://groups.google.com/forum/#!forum/barbelhisto-usergroup) about the documentation and project or [post an issue.](https://github.com/projectbarbel/barbelhisto-core/issues)`,
       title: 'Join the community',
     },
     {
-      content: "Find out what's new with this project",
+      content: `Find out what's new with this project and see the [new releases.](${docUrl(
+        'release.html',
+      )})`,
       title: 'Stay up to date',
     },
   ];
@@ -43,7 +45,7 @@ function Help(props) {
           <header className="postHeader">
             <h1>Need help?</h1>
           </header>
-          <p>This project is maintained by a dedicated group of people.</p>
+          <p></p>
           <GridBlock contents={supportLinks} layout="threeColumn" />
         </div>
       </Container>

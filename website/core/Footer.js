@@ -43,7 +43,7 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>Community</h5>
-            <a href="https://groups.google.com/forum/#!forum/barbel-histo-developers">
+            <a href="https://groups.google.com/d/forum/barbelhisto-usergroup">
               Developer user group
             </a>
             <a

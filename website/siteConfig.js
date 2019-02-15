@@ -40,7 +40,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'about', label: 'Docs'},
 //    {doc: 'doc4', label: 'API'},
-    {page: 'docs/support', label: 'Help'}
+    {page: 'help', label: 'Help'}
   ],
 
   // If you have users set above, you add it here:
@@ -56,6 +56,8 @@ const siteConfig = {
     primaryColor: '#155C8F',
     secondaryColor: '#A1BED2',
   },
+
+  separateCss: ['apidocs'],
 
   /* Custom fonts for website */
   /*
