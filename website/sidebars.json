@@ -1,7 +1,7 @@
 {
   "docs": {
-    "Barbel Histo": ["about", "license", "download"],
-    "Documentation": ["getstarted", "modes", "inmemory", "persistence"],
+    "BarbelHisto": ["about", "license", "download"],
+    "Documentation": ["readme"],
     "Project Details": ["support", "acknowledge", "repo", "release"]
   },
   "docs-other": {

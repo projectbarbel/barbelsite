@@ -64,9 +64,9 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href={docUrl('doc1.html')}>Get Started</Button>
-            <Button href={docUrl('doc2.html')}>Github</Button>
-            <Button href="#try">Maven Central</Button>
+            <Button href={docUrl('readme.html')}>Get Started</Button>
+            <Button href="https://github.com/projectbarbel/barbelhisto-core">Github</Button>
+            <Button href={docUrl('download.html')}>Download</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -93,13 +93,13 @@ class Index extends React.Component {
     );
 
     const FeatureCallout = () => (
-      <div/>
-/*         className="productShowcaseSection paddingBottom"
+      <div
+         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
         <h2>Features</h2>
         <MarkdownBlock>
           
-        </MarkdownBlock> </div>*/
+        </MarkdownBlock> </div>
     );
 
     const TryOut = () => (
@@ -133,10 +133,10 @@ class Index extends React.Component {
       <Block background="light">
         {[
           {
-            content: 'Drive through the documentation to get started. Explore the different use cases of using Barbel Histo Core as your primary bitemporal data management API.',
+            content: 'Drive through the documentation to get started. Explore the different use cases of using BarbelHisto Core as your primary bitemporal data management API.',
             image: `${baseUrl}img/howto.svg`,
             imageAlign: 'right',
-            title: 'Learn How to use Barbel Histo Core',
+            title: 'Learn How to use BarbelHisto Core',
           },
         ]}
       </Block>
@@ -146,22 +146,22 @@ class Index extends React.Component {
       <Block layout="threeColumn">
         {[
           {
-            content: 'Barbel Histo Core is a bitemporal in-memory data storage API. It keeps track of two time dimensions: effective time and record time.',
+            content: 'BarbelHisto Core is a bitemporal in-memory data storage API. It keeps track of two time dimensions: effective time and record time.',
             image: `${baseUrl}img/bitemporal.svg`,
             imageAlign: 'top',
             title: 'Bitemporal data management',
           },
           {
-            content: 'Barbel Histo Core provides in-memory transaction isolation to support business critical applications.',
+            content: 'BarbelHisto Core provides in-memory transaction isolation to support business critical applications.',
             image: `${baseUrl}img/inmemory.svg`,
             imageAlign: 'top',
             title: 'In-memory transactions',
           },
           {
-            content: 'Built on Google\'s ultra-fast collection framework, Barbel Histo allows high-end performance batch processing operations.',
-            image: `${baseUrl}img/cqengine.svg`,
+            content: 'Built on ultra-fast collection frameworks, BarbelHisto allows high-end performance batch processing operations.',
+            image: `${baseUrl}img/examples.svg`,
             imageAlign: 'top',
-            title: 'Powered by cqengine',
+            title: 'Build on cqengine',
           },
           {
             content: 'Barbel core API can be used in various flavours. As full data storage API for microservices, as well as simple user-friendly API to manage your bitemporal data. All functions are provided by a simple API.',
@@ -170,7 +170,7 @@ class Index extends React.Component {
             title: 'Gets you started in minutes',
           },
           {
-            content: 'Although it\'s not mandatory to operate with persistence storage backends, an SPI persistence provider endpoint is build-in. This allows to use Barbel Histo Core as single Pojo-based persistence layer.',
+            content: 'Although it\'s not mandatory to operate with persistence storage backends, an SPI persistence provider endpoint is build-in. This allows to use BarbelHisto Core as single Pojo-based persistence layer.',
             image: `${baseUrl}img/database.svg`,
             imageAlign: 'top',
             title: 'Built-in persistence support',
@@ -213,15 +213,16 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
           <Showcase />
         </div>
       </div>
     );
   }
 }
-
+/*
+          <FeatureCallout />
+          <LearnHow />
+          <TryOut />
+          <Description />
+*/
 module.exports = Index;

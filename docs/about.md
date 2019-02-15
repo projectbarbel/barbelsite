@@ -27,14 +27,20 @@ This library enables you to store your data in a format that enables you to answ
 ## Typical uses
 There are many cases when BarbelHisto will help you tackle a lot of the bitemporal complexity. A very common usage is managing contracts for clients, especially when you have effective dates of arbitrary contract changes, i.e. insurance policies, HR salary systems and many more cases. 
 
-Examples:
+Example business requirements:
+- whenever you need an auditing-proof record of your business data
+
+More concrete:
 - clients communicate their adress changes, **two month before** they move to their new place, how would you add this adress change to the client database **effective in two month**?
 - salary of employees will increase by 2% **in two months**, how can you add the data to the system **in advance** that should become effective in the future?
 - in case of a claim for an accident happened **two month ago**, what was the concrete insurance coverage at that time? (since it may be possible that the contract was changed ever since)
 
+Technical uses
+- ultra-fast (batch) processing of bitemporal data on millions of records
+- delegate the complexity of managing two time dimensions consistently to BarbelHisto and instead concentrate on business requirements
+
 ## Getting started
-1. [Download](download.md) BarbelHisto
-2. Read the [Twenty Seconds Tutorial](getstarted.md)
+See [Get started](readme)
 
 ## How it works
-BarbelHisto is based on [cqengine](cqengine navigableindex) that provides ultra-fast access to millions of objects if required. On top of that it works with snapshots of objects to track changes in effective and record time. See the [Documention](inmemory.md) for more details.
+BarbelHisto is based on [cqengine](https://github.com/npgall/cqengine) that provides ultra-fast access to millions of objects if required. On top of that it works with snapshots of objects to track changes in effective and record time. 
