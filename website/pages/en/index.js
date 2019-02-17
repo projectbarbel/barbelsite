@@ -194,12 +194,12 @@ class Index extends React.Component {
         },
         {
           content:
-            '*Using BarbelHisto will enmable developers of many systems to concentrate on the remaining business requirements instead of implementing complex audit-proof bitemporal data storage again and again.*',
+            '*The goal of BarbelHisto is to enable developers to concentrate on the business requirements instead of implementing complex audit-proof bitemporal data storage again and again.*',
           image: `${siteConfig.baseUrl}img/niklas.png`,
           imageAlign: 'top',
           imageAlt: 'Niklas Schlimm',
           title:
-            'Niklas Schlimm <br/><font size="2">Coding enthusiast</font>',
+            'Niklas Schlimm <br/><font size="2">BarbelHisto developer</font>',
         },
         {
           content:
