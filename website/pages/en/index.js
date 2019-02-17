@@ -179,6 +179,42 @@ class Index extends React.Component {
       </Block>
     );
 
+    const Faces = () => (
+      <GridBlock
+      align="center"
+      contents={[
+        {
+          content:
+            "",
+          image: ``,
+          imageAlign: 'top',
+          imageAlt: '',
+          title:
+            '',
+        },
+        {
+          content:
+            '*Using BarbelHisto will enmable developers of many systems to concentrate on the remaining business requirements instead of implementing complex audit-proof bitemporal data storage again and again.*',
+          image: `${siteConfig.baseUrl}img/niklas.png`,
+          imageAlign: 'top',
+          imageAlt: 'Niklas Schlimm',
+          title:
+            'Niklas Schlimm <br/><font size="2">Coding enthusiast</font>',
+        },
+        {
+          content:
+            "",
+          image: ``,
+          imageAlign: 'top',
+          imageAlt: '',
+          title:
+            '',
+        }
+      ]}
+      layout="threeColumn"
+    />
+);
+
     const Showcase = () => {
       if ((siteConfig.users || []).length === 0) {
         return null;
@@ -214,6 +250,7 @@ class Index extends React.Component {
         <div className="mainContainer">
           <Features />
           <Showcase />
+          <Faces />
         </div>
       </div>
     );
