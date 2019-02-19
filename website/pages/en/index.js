@@ -66,7 +66,7 @@ class HomeSplash extends React.Component {
           <PromoSection>
             <Button href={docUrl('readme.html')}>Get Started</Button>
             <Button href="https://github.com/projectbarbel/barbelhisto-core">Github</Button>
-            <Button href={docUrl('download.html')}>Download</Button>
+            <Button href="https://search.maven.org/artifact/org.projectbarbel/barbelhisto/">Download</Button>
           </PromoSection>
         </div>
       </SplashContainer>
