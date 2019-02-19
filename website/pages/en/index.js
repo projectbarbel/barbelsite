@@ -65,8 +65,8 @@ class HomeSplash extends React.Component {
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
             <Button href={docUrl('readme.html')}>Get Started</Button>
-            <Button href="https://github.com/projectbarbel/barbelhisto-core">Github</Button>
             <Button href="https://search.maven.org/artifact/org.projectbarbel/barbelhisto/">Download</Button>
+            <Button href="https://github.com/projectbarbel/barbelhisto-core">Github</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -170,7 +170,7 @@ class Index extends React.Component {
             title: 'Gets you started in minutes',
           },
           {
-            content: 'Although it\'s not mandatory to operate with persistence storage backends, an SPI persistence provider endpoint is build-in. This allows to use BarbelHisto Core as single Pojo-based persistence layer.',
+            content: 'Although it\'s not mandatory to operate with persistence storage backends, BarbelHisto provides support for off-heap, disk and custom persistence integration.',
             image: `${baseUrl}img/database.svg`,
             imageAlign: 'top',
             title: 'Built-in persistence support',

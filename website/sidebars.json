@@ -2,7 +2,7 @@
   "docs": {
     "BarbelHisto": ["about", "license", "download"],
     "Documentation": ["readme"],
-    "Project Details": ["support", "acknowledge", "repo", "release"]
+    "Project Details": ["support", "acknowledge", "repo", "releasenotes"]
   },
   "docs-other": {
     "Getting Started": ["doc4", "doc5"]

@@ -20,10 +20,6 @@
       "examples": {
         "title": "BarbelHisto Policy Management Service"
       },
-      "getstarted": {
-        "title": "Twenty Seconds Tutorial",
-        "sidebar_label": "Twenty Seconds Tutorial"
-      },
       "inmemory": {
         "title": "In Memory Usage",
         "sidebar_label": "In Memory Usage"
@@ -48,15 +44,81 @@
         "title": "Release notes",
         "sidebar_label": "Release notes"
       },
+      "releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
       "repo": {
         "title": "Source Repository",
         "sidebar_label": "Source Repository"
+      },
+      "snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
       },
       "support": {
         "title": "Getting Support",
         "sidebar_label": "Getting Support"
       },
       "usecases": {
+        "title": "How to use BarbelHisto"
+      },
+      "version-1.1.0-about": {
+        "title": "About",
+        "sidebar_label": "About"
+      },
+      "version-1.1.0-acknowledge": {
+        "title": "Acknowledgements",
+        "sidebar_label": "Acknowledgements"
+      },
+      "version-1.1.0-download": {
+        "title": "Download",
+        "sidebar_label": "Download"
+      },
+      "version-1.1.0-examples": {
+        "title": "BarbelHisto Policy Management Service"
+      },
+      "version-1.1.0-inmemory": {
+        "title": "In Memory Usage",
+        "sidebar_label": "In Memory Usage"
+      },
+      "version-1.1.0-license": {
+        "title": "License",
+        "sidebar_label": "License"
+      },
+      "version-1.1.0-modes": {
+        "title": "Pojo and Bitemporal support",
+        "sidebar_label": "Pojo and Bitemporal support"
+      },
+      "version-1.1.0-persistence": {
+        "title": "Persistent Collections",
+        "sidebar_label": "Persistent Collections"
+      },
+      "version-1.1.0-readme": {
+        "title": "Get started",
+        "sidebar_label": "Get started"
+      },
+      "version-1.1.0-release": {
+        "title": "Release notes",
+        "sidebar_label": "Release notes"
+      },
+      "version-1.1.0-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.1.0-repo": {
+        "title": "Source Repository",
+        "sidebar_label": "Source Repository"
+      },
+      "version-1.1.0-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.1.0-support": {
+        "title": "Getting Support",
+        "sidebar_label": "Getting Support"
+      },
+      "version-1.1.0-usecases": {
         "title": "How to use BarbelHisto"
       }
     },

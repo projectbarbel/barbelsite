@@ -6,14 +6,7 @@ sidebar_label: Get started
 
 [README.md](https://github.com/projectbarbel/barbelhisto-core/blob/master/README.md) - Look into the README file on github.
 
-Get a [Maven](http://maven.apache.org) snapshot:
-```
-<dependency>
-  <groupId>org.projectbarbel</groupId>
-  <artifactId>barbelhisto</artifactId>
-  <version>1.0-SNAPSHOT</version>
-</dependency>
-```
+Downalod a version on [Maven Central.](https://search.maven.org/artifact/org.projectbarbel/barbelhisto) 
 
 [Snapshot releases on Github](https://github.com/projectbarbel/barbelhisto-core/releases) - Get actual snapshot releases. Maven follows.
 

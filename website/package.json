@@ -1,5 +1,11 @@
 {
   "scripts": {
+    "unset-versioning": "mv versions.json version.json 2>/dev/null || : && mv pages/en/versions.js static/versions.js 2>/dev/null || :",
+    "set-versioning": "mv version.json versions.json 2>/dev/null || : && mv static/versions.js pages/en/versions.js 2>/dev/null || :",
+    "start-dev": "yarn run unset-versioning && yarn run start",
+    "start-prod": "yarn run set-versioning && yarn run start",
+    "build-dev": "yarn run unset-versioning && yarn run build",
+    "build-prod": "yarn run set-versioning && yarn run build",
     "examples": "docusaurus-examples",
     "start": "docusaurus-start",
     "build": "docusaurus-build",
