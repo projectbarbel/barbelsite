@@ -158,10 +158,10 @@ class Index extends React.Component {
             title: 'In-memory transactions',
           },
           {
-            content: 'Built on ultra-fast collection frameworks, BarbelHisto allows high-end performance batch processing operations.',
+            content: 'Built on best-of-bread collection frameworks, BarbelHisto allows high-end performance batch processing operations.',
             image: `${baseUrl}img/examples.svg`,
             imageAlign: 'top',
-            title: 'Build on cqengine',
+            title: 'Ultra-fast processing',
           },
           {
             content: 'Barbel core API can be used in various flavours. As full data storage API for microservices, as well as simple user-friendly API to manage your bitemporal data. All functions are provided by a simple API.',
