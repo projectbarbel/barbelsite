@@ -1,8 +1,23 @@
 {
   "docs": {
-    "BarbelHisto": ["about", "license", "download"],
-    "Documentation": ["readme"],
-    "Project Details": ["support", "acknowledge", "repo", "releasenotes"]
+    "BarbelHisto": [
+      "about", 
+      "license", 
+      "download"
+    ],
+    "Documentation": [
+      "getstarted",
+      "bitemporal",
+      "timeshift",
+      "persistence",
+      "indexing",
+      "customization"
+    ],
+    "Project Details": [
+      "support", 
+      "acknowledge", 
+      "repo", 
+      "releasenotes"]
   },
   "docs-other": {
     "Getting Started": ["doc4", "doc5"]

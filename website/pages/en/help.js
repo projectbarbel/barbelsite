@@ -22,7 +22,7 @@ function Help(props) {
   const supportLinks = [
     {
       content: `Learn more and [get started.](${docUrl(
-        'readme.html',
+        'getstarted.html',
       )})`,
       title: 'Get started',
     },

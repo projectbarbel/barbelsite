@@ -1,0 +1,29 @@
+{
+  "version-1.4.0-docs": {
+    "BarbelHisto": [
+      "version-1.4.0-about",
+      "version-1.4.0-license",
+      "version-1.4.0-download"
+    ],
+    "Documentation": [
+      "version-1.4.0-getstarted",
+      "version-1.4.0-bitemporal",
+      "version-1.4.0-timeshift",
+      "version-1.4.0-persistence",
+      "version-1.4.0-indexing",
+      "version-1.4.0-customization"
+    ],
+    "Project Details": [
+      "version-1.4.0-support",
+      "version-1.4.0-acknowledge",
+      "version-1.4.0-repo",
+      "version-1.4.0-releasenotes"
+    ]
+  },
+  "version-1.4.0-docs-other": {
+    "Getting Started": [
+      "version-1.4.0-doc4",
+      "version-1.4.0-doc5"
+    ]
+  }
+}

@@ -40,7 +40,7 @@ Technical uses
 - delegate the complexity of managing two time dimensions consistently to BarbelHisto and instead concentrate on business requirements
 
 ## Getting started
-See [Get started](readme)
+See [Get started](getstarted)
 
 ## How it works
 BarbelHisto is based on [cqengine](https://github.com/npgall/cqengine) that provides ultra-fast access to millions of objects if required. On top of that it works with snapshots of objects to track changes in effective and record time. 

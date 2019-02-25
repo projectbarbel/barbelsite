@@ -58,6 +58,8 @@ const siteConfig = {
 
   separateCss: ['apidocs'],
 
+  usePrism: ['java'],
+
   /* Custom fonts for website */
   /*
   fonts: {

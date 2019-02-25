@@ -64,7 +64,7 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href={docUrl('readme.html')}>Get Started</Button>
+            <Button href={docUrl('getstarted.html')}>Get Started</Button>
             <Button href="https://search.maven.org/artifact/org.projectbarbel/barbelhisto/">Download</Button>
             <Button href="https://github.com/projectbarbel/barbelhisto-core">Github</Button>
           </PromoSection>
@@ -152,13 +152,13 @@ class Index extends React.Component {
             title: 'Bitemporal data management',
           },
           {
-            content: 'BarbelHisto Core provides in-memory transaction isolation to support business critical applications.',
+            content: 'BarbelHisto Core provides in-memory and persistent transaction isolation to support business critical applications.',
             image: `${baseUrl}img/inmemory.svg`,
             imageAlign: 'top',
             title: 'In-memory transactions',
           },
           {
-            content: 'Built on best-of-bread collection frameworks, BarbelHisto allows high-end performance batch processing operations.',
+            content: 'Built on best-of-bread frameworks, BarbelHisto allows high-end performance batch processing operations.',
             image: `${baseUrl}img/examples.svg`,
             imageAlign: 'top',
             title: 'Ultra-fast processing',

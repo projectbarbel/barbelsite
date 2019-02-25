@@ -37,7 +37,7 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('readme.html', this.props.language)}>
+            <a href={this.docUrl('getstarted.html')}>
               Getting Started
             </a>
           </div>
@@ -56,12 +56,12 @@ class Footer extends React.Component {
             <a href="https://github.com/projectbarbel/barbelhisto-core">GitHub</a>
             <a
               className="github-button"
-              href="https://github.com/projectbarbel"
+              href="https://github.com/projectbarbel/barbelhisto-core"
               data-icon="octicon-star"
-              data-count-href="/barbelhisto-core/stargazers"
+              data-count-href="/stargazers"
               data-show-count="true"
               data-count-aria-label="# stargazers on GitHub"
-              aria-label="Star this project on GitHub">
+              aria-label="BarbelHisto">
               Star
             </a>
           </div>
