@@ -19,11 +19,15 @@
       },
       "customization": {
         "title": "Customizing BarbelHisto",
-        "sidebar_label": "Customizing BarbelHisto"
+        "sidebar_label": "Customizing"
       },
       "download": {
         "title": "Download",
         "sidebar_label": "Download"
+      },
+      "events": {
+        "title": "Using BarbelHisto events",
+        "sidebar_label": "Using events"
       },
       "examples": {
         "title": "BarbelHisto Policy Management Service"
@@ -190,6 +194,22 @@
         "sidebar_label": "Release Notes"
       },
       "version-1.4.1-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.4.2-acknowledge": {
+        "title": "Acknowledgements",
+        "sidebar_label": "Acknowledgements"
+      },
+      "version-1.4.2-events": {
+        "title": "Using BarbelHisto events",
+        "sidebar_label": "Using events"
+      },
+      "version-1.4.2-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.4.2-snapshotnotes": {
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
       }

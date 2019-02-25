@@ -10,7 +10,9 @@ Code from BarbelHisto is primarily based on these these projects:
 
 - [cqengine](https://github.com/npgall/cqengine)
 - [cglib](https://github.com/cglib/cglib)
-- [gson](https://github.com/google/gson)
+- [guava](https://github.com/google/guava)
+- [cloner](https://github.com/kostaskougios/cloning)
+- [kryo](https://github.com/EsotericSoftware/kryo)
 
 ### Supporting services
 
