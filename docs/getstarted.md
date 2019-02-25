@@ -18,7 +18,7 @@ You're ready to store instances of `Employee` to your `BarbelHisto` instance.
 Employee employee = new Employee("somePersonelNumber", "Niklas", "Schlimm");
 core.save(employee, LocalDate.now(), LocalDate.MAX);
 ```
-In the `Employee.class` you need to specify the `@DocumentId` so that `BarbelHisto`can group versions to a document. In the `Employee.class` the `personnelNumber` is the document ID. 
+In the `Employee.class` you need to specify the `@DocumentId` so that `BarbelHisto`can group versions to a document journal. In the `Employee.class` the `personnelNumber` is the document ID. 
 ```java
 public static class Employee {
    @DocumentId
@@ -38,7 +38,7 @@ Notice that you need to tell `BarbelHisto` what effective date your looking for.
 ```java
 Employee effectiveIn10Days = core.retrieveOne(BarbelQueries.effectiveAt(employee.personnelNumber, LocalDate.now().plusDays(10)));
 ```
-That query retrieves the `Employee` version effective in ten days. It will return one, cause you've stored the `Employee` version to be effective from now to infinite (`LocalDate.MAX`). If you retrieve the `Employee` effective yesterday you'll receive an `IllegalStateException` claiming that no value can be found. This strict treatment is to avoid `NullPointerException` somewhere later in the process. However, this query throws an exception, cause nothing was effective yesterday:
+That query retrieves the `Employee` version effective in ten days. It will return one, cause you've stored the `Employee` version to be effective from now to infinite (`LocalDate.MAX`). If you retrieve the `Employee` effective yesterday you'll receive a `NoSuchElementException` claiming that no value can be found. This strict treatment is to avoid `NullPointerException` somewhere later in the process. However, this query throws an exception, cause nothing was effective yesterday:
 ```java
 Employee effectiveYesterday = core.retrieveOne(BarbelQueries.effectiveAt(employee.personnelNumber, LocalDate.now().minusDays(1)));
 ```
@@ -48,6 +48,7 @@ Whenever you receive data from `BarbelHisto` with `retrieve`-methods all the obj
 BitemporalStamp versionData = ((Bitemporal)effectiveEmployeeVersion).getBitemporalStamp();
 ```
 That `BitemporalStamp` contains the effective time and record time data for that given object.
+> Casting is only required in `BarbelMode.POJO` as proxies are returned from the `BarbelHisto` instance. If you use `BarbelMode.BITEMPORAL` you get the `BitemporalStamp` by calling the `getBitemporalStamp()` method.
 ## Printing pretty journals
 Let's look at a pretty print of a document journal for a document ID. The pretty print shows what `BarbelHisto` knows about your data. It prints out the version data of of the given document ID in a table format. 
 ```java
