@@ -41,7 +41,7 @@ const siteConfig = {
 //    {doc: 'doc4', label: 'API'},
     {page: 'help', label: 'Help'}
   ],
-
+  gaTrackingId : 'UA-135274031-1',
   // If you have users set above, you add it here:
 //  users,
 

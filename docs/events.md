@@ -13,10 +13,11 @@ The following events are posted by `BarbelHisto`:
  3. `EventType.ACQUIRELOCK`, when `BarbelHisto` starts updating a document journal, synchronous post
  4. `EventType.REPLACEBITEMPORAL`, when versions are inactivated, maybe multiple times in a single update operation, both way
  5. `EventType.INSERTBITEMPORAL`, when new versions are inserted, one time per update operation, both way
- 6. `EventType.RELEASELOCK`, when `BarbelHisto` finishes the updating cycle, synchronous post
- 7. The `EventType.RETRIEVEDATA` event is posted each time when clients retrieve data from `BarbelHisto`.
+ 6. `EventType.UPDATEFINISHED`, when the update operation for journal was completed, once per save operation, both way
+ 7. `EventType.RELEASELOCK`, when `BarbelHisto` finishes the updating cycle, synchronous post
+ 8. The `EventType.RETRIEVEDATA` event is posted each time when clients retrieve data from `BarbelHisto`.
 
-Events 2-6 are posted in exactly that order in an update operation performed by the `save()` method of `BarbelHisto`.
+Events 2-7 are posted in exactly that order in an update operation performed by the `save()` method of `BarbelHisto`.
 ## Event handler methods
 Listeners to these events are implemented as the following examples:
 ```java

@@ -56,28 +56,25 @@ public void handleInitialization(BarbelInitializedEvent event{
     shadow = new ConcurrentIndexedCollection<>();
 }
 ```
-All listener methods need to be annotated with `@Subscribe`. The next listener methods listen to inserts and replacements of data int the `BarbelHisto` backbone:
+All listener methods need to be annotated with `@Subscribe`. The following listener method listens to inserts and replacements of data in the `BarbelHisto` backbone:
 ```java
 @Subscribe
-public void handleInserts(InsertBitemporalEvent event) {
+public void handleInserts(UpdateFinishedEvent event{
     @SuppressWarnings("unchecked")
-    List<Bitemporal> inserts = (List<Bitemporal>) event.getEventContext().g(InsertBitemporalEvent.NEWVERSIONS);
-    inserts.stream().forEach(v->shadow.add((DefaultDocument)v));
-
-@Subscribe
-public void handleReplacements(ReplaceBitemporalEvent event) {
+    List<Bitemporal> inserts = (List<Bitemporal>event.getEventContext()
+            .get(UpdateFinishedEvent.NEWVERSIONS);
+    inserts.stream().forEach(v -> shadow.ad(DefaultDocument) v));
     @SuppressWarnings("unchecked")
-    List<Bitemporal> obectsAdded = (List<Bitemporal>) event.getEventContext().g(ReplaceBitemporalEvent.OBJECTS_ADDED);
-    @SuppressWarnings("unchecked")
-    List<Bitemporal> obectsRemoved = (List<Bitemporal>) event.getEventContext().g(ReplaceBitemporalEvent.OBJECTS_REMOVED);
-    obectsAdded.stream().forEach(v->shadow.add((DefaultDocument)v));
-    obectsRemoved.stream().forEach(v->shadow.remove((DefaultDocument)v));
+    Set<Replacement> replacements (Set<Replacement>) event.getEventContext()
+            .get(UpdateFinishedEvent.REPLACEMENTS);
+    replacements.stream().flatM(r->r.getObjectsAdded().stream()).forEach(v -shadow.add((DefaultDocument) v));
+    replacements.stream().flatM(r->r.getObjectsRemoved().stream()).forEach(v -shadow.remove((DefaultDocument) v));
 }
 ```
-The handler methods extract the data from the event context and drop that into (or remove them from) the `shadow` collection. Notice that each handler method is annotated with the `@Subscribe` annotation and then takes the specific event as parameter. For a complete list of events see `EventType`. Next, clients register their listeners, i.e. the classes containing listener methods, to their `BarbelHisto` instance like so:
+The handler method extracts the data from the event context and drop that into (or remove them from) the `shadow` collection. Notice that each handler method is annotated with the `@Subscribe` annotation and then takes the specific event as parameter. For a complete list of events see `EventType`. Next, clients register their listeners, i.e. the classes containing listener methods, to their `BarbelHisto` instance like so:
 ```java
 BarbelHisto<DefaultDocument> barbel = BarbelHistoBuilder.barbel().withMode(BarbelMode.BITEMPORAL)
-        .withSynchronousEventListener(new ShadowCollectionListeners()).build();
+        .withSynchronousEventListener(new ShadowCollectionListener()).build();
 ```
 When you save objects to `BarbelHisto` the `shadow` collection will now contain a complete copy of the backbone, since all changes are mirrored into the shadow data source. 
 > To improve performance on write operations considerably it's also possible to register the described **update** listeners with the **asynchronous** event bus. This would, however, also require some more sophisticated error handling to ensure data integrity.

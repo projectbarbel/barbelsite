@@ -212,6 +212,22 @@
       "version-1.4.2-snapshotnotes": {
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
+      },
+      "version-1.5.0-events": {
+        "title": "Using BarbelHisto events",
+        "sidebar_label": "Using events"
+      },
+      "version-1.5.0-persistence": {
+        "title": "Adding persistence",
+        "sidebar_label": "Adding persistence"
+      },
+      "version-1.5.0-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.5.0-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
       }
     },
     "links": {
