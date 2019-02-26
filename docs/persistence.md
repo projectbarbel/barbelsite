@@ -74,12 +74,12 @@ The next step to complete integration of external data sources using events woul
 The following example listener method waits for the `RetrieveDataEvent` posted by `BarbelHisto` when clients request data:
 ```java
 @Subscribe
-public void handleRetrieveData(RetrieveDataEvenevent) {
+public void handleRetrieveData(RetrieveDataEvent event) {
     Query<DefaultDocument> query (Query<DefaultDocument>) event.getEventContext()
             .get(RetrieveDataEvent.QUERY);
     BarbelHisto<DefaultDocument> histo (BarbelHisto<DefaultDocument>event.getEventContext()
             .get(RetrieveDataEvent.BARBEL);
-    final String documentId = (StringBarbelQueries.returnIDForQuery(query);
+    final String documentId = (String)BarbelQueries.returnIDForQuery(query);
     // draw data from backend data source by document id
     // load that data to the backbone ...
     histo.load(docs); 
@@ -91,8 +91,8 @@ We're almost done now. When you'd use lazy loading you need another listener for
 ```java
 @Subscribe
 public void handleInitializeJournal(InitializeJournalEvent event) {
-    DocumentJournal journal = (DocumentJournal)event.getEventContext().g(DocumentJournal.class);
-    BarbelHisto<DefaultDocument> histo = (BarbelHisto<DefaultDocument>) event.getEventConte()
+    DocumentJournal journal = (DocumentJournal)event.getEventContext().get(DocumentJournal.class);
+    BarbelHisto<DefaultDocument> histo = (BarbelHisto<DefaultDocument>) event.getEventContext()
             .get(RetrieveDataEvent.BARBEL);
     String documentId = journal.getId();
     // draw the data by document ID from the backend data source
