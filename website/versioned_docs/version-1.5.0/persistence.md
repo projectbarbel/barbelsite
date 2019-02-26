@@ -48,17 +48,17 @@ See the [CqEngine documentation](https://github.com/npgall/cqengine) on all the 
 To connect the backbone and mirror the data into a custom external data source, clients create listener methods. The first method initializes the `shadow` data source:
 ```java
 @Subscribe
-public void handleInitialization(BarbelInitializedEvent event{
+public void handleInitialization(BarbelInitializedEvent event) {
     // initialize connection to backend
 }
 ```
 All listener methods need to be annotated with `@Subscribe`. The following listener method listens to inserts and replacements of data in the `BarbelHisto` backbone:
 ```java
 @Subscribe
-public void handleUpdates(UpdateFinishedEvent event{
-    List<Bitemporal> inserts = (List<Bitemporal>event.getEventContext().g(UpdateFinishedEvent.NEWVERSIONS);
-    inserts.stream().forEach(v -> shadow.ad(DefaultDocument) v));
-    Set<Replacement> replacements (Set<Replacement>) event.getEventContext()
+public void handleUpdates(UpdateFinishedEvent event) {
+    List<Bitemporal> inserts = (List<Bitemporal>)event.getEventContext().get(UpdateFinishedEvent.NEWVERSIONS);
+    inserts.stream().forEach(v -> shadow.add((DefaultDocument) v));
+    Set<Replacement> replacements = (Set<Replacement>) event.getEventContext()
             .get(UpdateFinishedEvent.REPLACEMENTS);
     // perform inserts and replacements to data source
 }
@@ -76,9 +76,9 @@ The following example listener method waits for the `RetrieveDataEvent` posted b
 ```java
 @Subscribe
 public void handleRetrieveData(RetrieveDataEvent event) {
-    Query<DefaultDocument> query (Query<DefaultDocument>) event.getEventContext()
+    Query<DefaultDocument> query = (Query<DefaultDocument>) event.getEventContext()
             .get(RetrieveDataEvent.QUERY);
-    BarbelHisto<DefaultDocument> histo (BarbelHisto<DefaultDocument>event.getEventContext()
+    BarbelHisto<DefaultDocument> histo = (BarbelHisto<DefaultDocument>) event.getEventContext()
             .get(RetrieveDataEvent.BARBEL);
     final String documentId = (String)BarbelQueries.returnIDForQuery(query);
     // draw data from backend data source by document id
