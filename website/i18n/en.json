@@ -52,6 +52,10 @@
         "title": "Pojo and Bitemporal support",
         "sidebar_label": "Pojo and Bitemporal support"
       },
+      "mongo": {
+        "title": "MongoDB integration",
+        "sidebar_label": "Integrating MongoDB"
+      },
       "performance": {
         "title": "Performance Analysis",
         "sidebar_label": "Performance Analysis"
@@ -228,6 +232,38 @@
       "version-1.5.0-snapshotnotes": {
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
+      },
+      "version-1.5.1-mongo": {
+        "title": "MongoDB integration",
+        "sidebar_label": "Integrating MongoDB"
+      },
+      "version-1.5.1-persistence": {
+        "title": "Adding persistence",
+        "sidebar_label": "Adding persistence"
+      },
+      "version-1.5.1-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.5.1-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.5.2-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.5.3-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.5.4-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.5.4-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
       }
     },
     "links": {
@@ -237,6 +273,7 @@
     "categories": {
       "BarbelHisto": "BarbelHisto",
       "Documentation": "Documentation",
+      "Persistence": "Persistence",
       "Project Details": "Project Details",
       "Getting Started": "Getting Started"
     }

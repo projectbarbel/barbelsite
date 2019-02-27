@@ -53,10 +53,10 @@ All listener methods need to be annotated with `@Subscribe`. The following liste
 ```java
 @Subscribe
 public void handleUpdates(UpdateFinishedEvent event) {
-    List<Bitemporal> inserts = (List<Bitemporal>)event.getEventContext().get(UpdateFinishedEvent.NEWVERSIONS);
+    List<Bitemporal> inserts = (List<Bitemporal>) event.getEventContext().get(UpdateFinishedEvent.NEWVERSIONS);
     inserts.stream().forEach(v -> shadow.add((DefaultDocument) v));
-    Set<Replacement> replacements = (Set<Replacement>) event.getEventContext()
-            .get(UpdateFinishedEvent.REPLACEMENTS);
+    Set<Inactivation> inactivations = (Set<Inactivation>) event.getEventContext()
+                    .get(UpdateFinishedEvent.INACTIVATIONS);
     // perform inserts and replacements to data source
 }
 ```
