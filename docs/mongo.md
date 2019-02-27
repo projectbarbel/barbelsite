@@ -4,9 +4,9 @@ title: MongoDB integration
 sidebar_label: Integrating MongoDB
 ---
 
-MongoDB can be integrated by using the supplied MongoDB listeners from the `barbelhisto-persistence-mongo` package. Download your [MongoDB listeners on Maven Central](https://search.maven.org/artifact/org.projectbarbel/barbelhisto-persistence-mongo/).
+MongoDB can be integrated by using the supplied MongoDB listeners from the `barbelhisto-persistence-mongo` package. Download your [MongoDB listeners on Maven Central](https://search.maven.org/search?q=a:barbelhisto-persistence-mongo).
  
-[![Maven Central](https://img.shields.io/maven-central/v/org.projectbarbel/barbelhisto-persistence-mongo.svg)](https://search.maven.org/artifact/org.projectbarbel/barbelhisto-persistence-mongo/)
+[![Maven Central](https://img.shields.io/maven-central/v/org.projectbarbel/barbelhisto-persistence-mongo.svg)](https://search.maven.org/search?q=a:barbelhisto-persistence-mongo)
 
 To register the listeners to `BarbelHisto`:
  ```java
