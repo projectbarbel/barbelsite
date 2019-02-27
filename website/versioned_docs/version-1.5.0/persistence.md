@@ -6,7 +6,7 @@ original_id: persistence
 ---
 In `BarbelHisto` there are three flavors of persistence, you can choose the CqEngine persistence options, persistence integration using events, or you choose a custom persistence.
 ## CqEngine built-in persistence
-`BarbelHisto` is based on [CqEngine collections](https://github.com/npgall/cqengine) so clients can use any persistence options currently available in CqEngine. The default persistence of `BarbelHisto` is `OnHeapPersistence`. To change that you add a custom backbone collection. If you want to add `DiskPersistence` you'd need to define the primary key attribute as described in the CqEngine documentation:
+`BarbelHisto` is based on [CqEngine collections](https://github.com/npgall/cqengine), so clients can use any persistence options currently available in CqEngine. The default persistence of `BarbelHisto` is `OnHeapPersistence`. To change that you add a custom backbone collection. If you want to add `DiskPersistence` you'd need to define the primary key attribute as described in the CqEngine documentation:
 ```java
 final SimpleAttribute<PrimitivePrivatePojo, String> PRIMARY_KEY = new SimpleAttribute<PrimitivePrivatePojo, String>("versionId") {
     public String getValue(PrimitivePrivatePojo object, QueryOptions queryOptions) {
@@ -42,8 +42,6 @@ BarbelHisto<PrimitivePrivatePojo> core = BarbelHistoBuilder.barbel() .withBackbo
 See the [CqEngine documentation](https://github.com/npgall/cqengine) on all the options you can choose. 
 ## Event-based persistence
 `BarbelHisto` provides a sophisticated event mechanism to synchronize the backbone version data with external data sources. Events are posted on initialization tasks and data updates. Clients can register listeners for events and connect external data sources through the listeners. This enables  synchronization with an external data source. In the following examples we describe what you need to achieve this kind of persistence integration. 
-
-> The example uses `BarbelMode.BITEMPORAL` because these objects can be stored straight into the external data source. When clients use `BarbelMode.POJO` they deal with proxies and have to convert those objects into straight pojos appropriate for data storage and retrieval.
 ### Shadow data source
 To connect the backbone and mirror the data into a custom external data source, clients create listener methods. The first method initializes the `shadow` data source:
 ```java
@@ -112,7 +110,7 @@ BarbelHisto<DefaultDocument> core = BarbelHistoBuilder.barbel.withMode(BarbelMod
 // query should be pre-fetched with data from the lazy loading listeners
 List<DefaultDocument> docs = core.retrieve(BarbelQueries.all("someId"));
 ```
-The data of the document id `someId` will be lazy loaded into `BarbelHisto`. 
+The data of the required document IDs will be lazy loaded into `BarbelHisto`. 
 
 > For a complete integration register the update handler methods as well as the lazy loading handlers. Note that lazy loading always requires to register the listeners to the **>synchronous<** event bus. 
 ###  Error handling
