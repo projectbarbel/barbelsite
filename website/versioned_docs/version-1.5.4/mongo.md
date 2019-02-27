@@ -1,5 +1,5 @@
 ---
-id: version-1.5.1-mongo
+id: version-1.5.4-mongo
 title: MongoDB integration
 sidebar_label: Integrating MongoDB
 original_id: mongo
@@ -9,7 +9,7 @@ MongoDB can be integrated by using the supplied MongoDB listeners from the `barb
  
 [![Maven Central](https://img.shields.io/maven-central/v/org.projectbarbel/barbelhisto-persistence-mongo.svg)](https://search.maven.org/search?q=a:barbelhisto-persistence-mongo)
 
- To register the listeners to `BarbelHisto`:
+To register the listeners to `BarbelHisto`:
  ```java
 SimpleMongoListenerClient client = SimpleMongoListenerClient.create("mongodb://localhost:12345");
 SimpleMongoLazyLoadingListener lazyloader = SimpleMongoLazyLoadingListener.create(client.getMongoClient(), "testDb", "testCol", DefaultPojo.class, BarbelHistoContext.getDefaultGson());

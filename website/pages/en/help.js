@@ -27,8 +27,8 @@ function Help(props) {
       title: 'Get started',
     },
     {
-      content: `[Ask questions](https://groups.google.com/d/forum/barbelhisto-developers) about the documentation and project or [post an issue.](https://github.com/projectbarbel/barbelhisto-core/issues)`,
-      title: 'Join the community',
+      content: `Submit [an issue.](https://github.com/projectbarbel/barbelhisto-core/issues)`,
+      title: 'Get in contact on GitHub',
     },
     {
       content: `Find out what's new with this project and see the [new releases.](${docUrl(

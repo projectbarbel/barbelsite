@@ -257,6 +257,10 @@
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
       },
+      "version-1.5.4-mongo": {
+        "title": "MongoDB integration",
+        "sidebar_label": "Integrating MongoDB"
+      },
       "version-1.5.4-releasenotes": {
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
@@ -264,6 +268,10 @@
       "version-1.5.4-snapshotnotes": {
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
+      },
+      "version-1.5.4-support": {
+        "title": "Getting Support",
+        "sidebar_label": "Getting Support"
       }
     },
     "links": {
