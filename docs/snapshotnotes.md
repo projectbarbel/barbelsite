@@ -5,4 +5,6 @@ sidebar_label: Release Notes
 ---
 
 ## Version 1.6.0-SNAPSHOT
-b1c75b9 new snapshot pom 1.5.3-SNAPSHOT</br>
+ef70985 BarbelQueries with more then one id</br>
+cf9f41f Update README.md</br>
+3aa9e8e new snapshot pom 1.5.4-SNAPSHOT</br>

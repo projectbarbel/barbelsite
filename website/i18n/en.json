@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "Bitemporal data processing made easy",
+    "tagline": "Bitemporal data for Java applications",
     "docs": {
       "about": {
         "title": "About",
@@ -88,9 +88,6 @@
         "title": "Timeshifts with BarbelHisto",
         "sidebar_label": "Journey through time"
       },
-      "usecases": {
-        "title": "How to use BarbelHisto"
-      },
       "version-1.1.0-about": {
         "title": "About",
         "sidebar_label": "About"
@@ -145,9 +142,6 @@
       "version-1.1.0-support": {
         "title": "Getting Support",
         "sidebar_label": "Getting Support"
-      },
-      "version-1.1.0-usecases": {
-        "title": "How to use BarbelHisto"
       },
       "version-1.3.0-releasenotes": {
         "title": "Release Notes",
@@ -257,19 +251,19 @@
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
       },
-      "version-1.5.4-mongo": {
+      "version-1.5.5-mongo": {
         "title": "MongoDB integration",
         "sidebar_label": "Integrating MongoDB"
       },
-      "version-1.5.4-releasenotes": {
+      "version-1.5.5-releasenotes": {
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
       },
-      "version-1.5.4-snapshotnotes": {
+      "version-1.5.5-snapshotnotes": {
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
       },
-      "version-1.5.4-support": {
+      "version-1.5.5-support": {
         "title": "Getting Support",
         "sidebar_label": "Getting Support"
       }

@@ -22,7 +22,7 @@
 
 const siteConfig = {
   title: 'BarbelHisto', // Title for your website.
-  tagline: 'Bitemporal data processing made easy',
+  tagline: 'Bitemporal data for Java applications',
   url: 'https://www.projectbarbel.org', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:

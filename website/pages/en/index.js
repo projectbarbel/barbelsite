@@ -146,13 +146,13 @@ class Index extends React.Component {
       <Block layout="threeColumn">
         {[
           {
-            content: 'BarbelHisto Core is a bitemporal in-memory data storage API. It keeps track of two time dimensions: effective time and record time.',
+            content: 'BarbelHisto Core is a bitemporal data storage Java framework. It keeps track of two time dimensions: effective time and record time.',
             image: `${baseUrl}img/bitemporal.svg`,
             imageAlign: 'top',
             title: 'Bitemporal data management',
           },
           {
-            content: 'BarbelHisto Core provides in-memory and persistent transaction isolation to support business critical applications.',
+            content: 'BarbelHisto Core provides in-memory and persistent transaction isolation to support business critical Java applications.',
             image: `${baseUrl}img/inmemory.svg`,
             imageAlign: 'top',
             title: 'In-memory transactions',
@@ -164,13 +164,13 @@ class Index extends React.Component {
             title: 'Ultra-fast processing',
           },
           {
-            content: 'Barbel core API can be used in various flavours. As full data storage API for microservices, as well as simple user-friendly API to manage your bitemporal data. All functions are provided by a simple API.',
+            content: 'BarbelHisto Core can be used in various flavours. As full data storage layer for microservices, as well as simple user-friendly API to manage your bitemporal data. All functions are provided by a simple API.',
             image: `${baseUrl}img/getstarted.svg`,
             imageAlign: 'top',
             title: 'Gets you started in minutes',
           },
           {
-            content: 'Although it\'s not mandatory to operate with persistence storage backends, BarbelHisto provides support for off-heap, disk and custom persistence integration.',
+            content: 'Although it\'s not mandatory to operate with persistence storage backends, BarbelHisto provides built-in off-heap and disk-persistence support and integrates smoothely with NoSQL data sources.',
             image: `${baseUrl}img/database.svg`,
             imageAlign: 'top',
             title: 'Built-in persistence support',

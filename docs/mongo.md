@@ -14,4 +14,6 @@ SimpleMongoListenerClient client = SimpleMongoListenerClient.create("mongodb://l
 SimpleMongoLazyLoadingListener lazyloader = SimpleMongoLazyLoadingListener.create(client.getMongoClient(), "testDb", "testCol", DefaultPojo.class, BarbelHistoContext.getDefaultGson());
 BarbelHisto<DefaultPojo> lazyHisto = BarbelHistoBuilder.barbel().withSynchronousEventListener(lazyloader).build();
  ```
-To use `BarbelHisto` in conjunction with the listeners, applications should define an instance of `BarbelHisto` as singleton in their application. The singleton instance will be pre-fetched woth data as it is required on `retrieve` or `save` operations performed by the client. Also, the listeners will save new versions automatically to the defined `MongoCollection`.
+To use `BarbelHisto` in conjunction with the listeners, applications should define an instance of `BarbelHisto` as singleton in their application. The singleton instance will be pre-fetched with data as it is required on `retrieve` or `save` operations performed by the client. Also, the listeners will save new versions automatically to the defined `MongoCollection`.
+
+The simple listener implementations do not lock a document journal in the database. Therefore clients want to create a `BarbelHisto` singleton instance to ensure locking is performed properly on a document journal level. The simple listener implementations provide support for all `BarbelQueries`. If you define custom queries against `BarbelHisto` include the `BarbelQueries.DOCUMENT_ID` as a filter criterion.
