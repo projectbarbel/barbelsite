@@ -1,0 +1,36 @@
+{
+  "version-1.5.8-docs": {
+    "BarbelHisto": [
+      "version-1.5.8-about",
+      "version-1.5.8-license",
+      "version-1.5.8-download"
+    ],
+    "Documentation": [
+      "version-1.5.8-getstarted",
+      "version-1.5.8-bitemporal",
+      "version-1.5.8-timeshift",
+      "version-1.5.8-persistence",
+      "version-1.5.8-indexing",
+      "version-1.5.8-events",
+      "version-1.5.8-customization"
+    ],
+    "Persistence": [
+      "version-1.5.8-mongo"
+    ],
+    "Tutorials": [
+      "version-1.5.8-mongotutorial"
+    ],
+    "Project Details": [
+      "version-1.5.8-support",
+      "version-1.5.8-acknowledge",
+      "version-1.5.8-repo",
+      "version-1.5.8-releasenotes"
+    ]
+  },
+  "version-1.5.8-docs-other": {
+    "Getting Started": [
+      "version-1.5.8-doc4",
+      "version-1.5.8-doc5"
+    ]
+  }
+}

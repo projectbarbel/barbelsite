@@ -170,7 +170,7 @@ class Index extends React.Component {
             title: 'Gets you started in minutes',
           },
           {
-            content: 'Although it\'s not mandatory to operate with persistence storage backends, BarbelHisto provides built-in off-heap and disk-persistence support and integrates smoothely with NoSQL data sources.',
+            content: 'Although it\'s not mandatory to operate with persistence storage backends, BarbelHisto provides built-in off-heap and disk-persistence support and integrates smoothely with external data sources.',
             image: `${baseUrl}img/database.svg`,
             imageAlign: 'top',
             title: 'Built-in persistence support',

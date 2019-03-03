@@ -5,6 +5,8 @@ sidebar_label: Release Notes
 ---
 
 ## Version 1.6.0-SNAPSHOT
-ef70985 BarbelQueries with more then one id</br>
-cf9f41f Update README.md</br>
-3aa9e8e new snapshot pom 1.5.4-SNAPSHOT</br>
+a0cf743 New test cases multi update</br>
+1614eec TestExecutor runs as instance</br>
+d4567f9 First Version of Test Suite and Load/Unload with events to propagate change to persistence listeners</br>
+1324cc4 Timeshift can lazy load data now</br>
+e77cba7 new snapshot pom 1.6.0-SNAPSHOT</br>

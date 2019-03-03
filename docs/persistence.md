@@ -112,8 +112,8 @@ List<DefaultDocument> docs = core.retrieve(BarbelQueries.all("someId"));
 The data of the required document IDs will be lazy loaded into `BarbelHisto`. 
 
 > For a complete integration register the update handler methods as well as the lazy loading handlers. Note that lazy loading always requires to register the listeners to the **>synchronous<** event bus. 
-###  Error handling
-With synchronous event listeners it's possible to implement an error handling that ensures data integrity in case of any errors in the event handlers. By default event listeners fail silently. This is because subsequent handlers should not be harmed when one handler fails. However, you can change that behavior for **synchronous** listeners by calling the `HistoEvent.failed()`. This will produce a `HistoEventFailedException` when the control returns to `BarbelHisto`.
+###  Error handling with synchronous events 
+With synchronous event listeners clients can implement error handling in case of any errors in the event handlers. By default event listeners fail silently. This is because subsequent handlers should not be harmed when one handler fails. However, you can change that behavior for **synchronous** listeners by calling the `HistoEvent.failed()`. This will produce a `HistoEventFailedException` when the control returns to `BarbelHisto`.
 ```java
 @Subscribe
 public void handleInserts(InsertBitemporalEvent event) {
@@ -124,7 +124,27 @@ public void handleInserts(InsertBitemporalEvent event) {
     }
 }
 ```
-When the event was set to failed `BarbelHisto` will roll back the changes made during this update opration. This will ensure data integrity in such situations.
+When the event was set to failed `BarbelHisto` clients can handle the `HistoEventException`thrown. It's also possible to pass back context data from within the listener method back to the clients exception handling. 
+```java
+@Subscribe
+public void handleInserts(InsertBitemporalEvent event) {
+    try {
+        // some processing logic that might fail
+    } catch (Exception e) {
+        event.getEventContext().put("errorContext", "some error handling information");
+        event.failed();
+    }
+}
+```
+To get the context information clients just need to catch the `HistoEventFailedException`:
+```java
+try {
+    core.save(pojo, LocalDate.now().plusDays(1), LocalDate.MAX)
+} catch (HistoEventFailedException exception) {
+    String contextData = exception.getEvent().getEventContext().get("errorContext");
+    // do some recovery actions based on context data
+}
+```
 ## Custom persistence
 When you want to use other custom persistence alternatives as the ones we've described previously then `BarbelHisto` can export the backbone version data of a given document ID by calling the `BarbelHisto.unload()` and `BarbelHisto.load()` methods. Let's say you've created the data with `BarbelHisto`, then you export the data like so:
 ```java

@@ -56,6 +56,10 @@
         "title": "MongoDB integration",
         "sidebar_label": "Integrating MongoDB"
       },
+      "mongotutorial": {
+        "title": "Setting up MongoDB in 5 minutes",
+        "sidebar_label": "MongoDB tutorial"
+      },
       "performance": {
         "title": "Performance Analysis",
         "sidebar_label": "Performance Analysis"
@@ -266,6 +270,50 @@
       "version-1.5.5-support": {
         "title": "Getting Support",
         "sidebar_label": "Getting Support"
+      },
+      "version-1.5.6-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.5.7-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.5.8-mongo": {
+        "title": "MongoDB integration",
+        "sidebar_label": "Integrating MongoDB"
+      },
+      "version-1.5.8-mongotutorial": {
+        "title": "Setting up MongoDB in 5 minutes",
+        "sidebar_label": "MongoDB tutorial"
+      },
+      "version-1.5.8-persistence": {
+        "title": "Adding persistence",
+        "sidebar_label": "Adding persistence"
+      },
+      "version-1.5.8-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.5.8-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.5.9-events": {
+        "title": "Using BarbelHisto events",
+        "sidebar_label": "Using events"
+      },
+      "version-1.5.9-mongo": {
+        "title": "MongoDB integration",
+        "sidebar_label": "Integrating MongoDB"
+      },
+      "version-1.5.9-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.5.9-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
       }
     },
     "links": {
@@ -276,6 +324,7 @@
       "BarbelHisto": "BarbelHisto",
       "Documentation": "Documentation",
       "Persistence": "Persistence",
+      "Tutorials": "Tutorials",
       "Project Details": "Project Details",
       "Getting Started": "Getting Started"
     }
