@@ -4,9 +4,9 @@ title: Release Notes
 sidebar_label: Release Notes
 ---
 
-## Version 1.5.9
-a0cf743 New test cases multi update</br>
-1614eec TestExecutor runs as instance</br>
-d4567f9 First Version of Test Suite and Load/Unload with events to propagate change to persistence listeners</br>
-1324cc4 Timeshift can lazy load data now</br>
-e77cba7 new snapshot pom 1.6.0-SNAPSHOT</br>
+## Version 1.6.0
+ea0ecb2 New test cases for Mode.BITEMPORAL</br>
+b4dbae2 Further test cases</br>
+971c044 Renamed test suite annotations</br>
+7af9e08 Removed logs</br>
+8273609 new snapshot pom 1.6.0-SNAPSHOT</br>

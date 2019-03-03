@@ -3,7 +3,7 @@ id: events
 title: Using BarbelHisto events
 sidebar_label: Using events
 ---
-`BarbelHisto` provides a sophisticated event mechanism. Clients can implement event handler methods to handle the events. Amongst other uses these event handlers can drive the integration with external data sources. The event mechanism is based on [Google Guavas](https://github.com/google/guava) `EventBus` implementation. 
+`BarbelHisto` provides an event mechanism to extend the core functionality. Clients can implement event handler methods to handle the events. Amongst other uses these event handlers can drive the integration with external data sources. The event mechanism is based on [Google Guavas](https://github.com/google/guava) `EventBus` implementation. 
 
 Events are posted to synchronous and/or asynchronous `EventBus` instances. In case events are posted to synchronous and asynchronous event bus, they are refered to as posted 'both way'. Synchronous events are executed in the same thread issueing the event, which means that the handler methods listening to synchronous events execute synchronously. This can be usefull for many scenarios, like pre-fetching data in a lazy loading `BarbelHisto` instance. See [the persistence tutorial](persistence) for details.
 ## Event types

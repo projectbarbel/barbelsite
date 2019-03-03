@@ -146,34 +146,34 @@ class Index extends React.Component {
       <Block layout="threeColumn">
         {[
           {
-            content: 'BarbelHisto Core is a bitemporal data storage Java framework. It keeps track of two time dimensions: effective time and record time.',
+            content: 'BarbelHisto Core is a Java framework for bitemporal data management. It keeps track of two time dimensions: effective time and record time.',
             image: `${baseUrl}img/bitemporal.svg`,
             imageAlign: 'top',
-            title: 'Bitemporal data management',
+            title: 'Bitemporal data',
           },
           {
-            content: 'BarbelHisto Core provides in-memory and persistent transaction isolation to support business critical Java applications.',
-            image: `${baseUrl}img/inmemory.svg`,
-            imageAlign: 'top',
-            title: 'In-memory transactions',
-          },
-          {
-            content: 'Built on best-of-bread frameworks, BarbelHisto allows high-end performance batch processing operations.',
-            image: `${baseUrl}img/examples.svg`,
-            imageAlign: 'top',
-            title: 'Ultra-fast processing',
-          },
-          {
-            content: 'BarbelHisto Core can be used in various flavours. As full data storage layer for microservices, as well as simple user-friendly API to manage your bitemporal data. All functions are provided by a simple API.',
+            content: 'The core functionality is provided in a very small intuitive API in order to simplify the bi-temporal data processing for its users. ',
             image: `${baseUrl}img/getstarted.svg`,
             imageAlign: 'top',
-            title: 'Gets you started in minutes',
+            title: 'Get started in minutes',
           },
           {
-            content: 'Although it\'s not mandatory to operate with persistence storage backends, BarbelHisto provides built-in off-heap and disk-persistence support and integrates smoothely with external data sources.',
+            content: 'Built on proven community frameworks, BarbelHisto can be configured for extremely fast (batch) processing scenarios.',
+            image: `${baseUrl}img/examples.svg`,
+            imageAlign: 'top',
+            title: 'Fast processing',
+          },
+          {
+            content: 'Users can extend the functionality of BarbelHisto by using the configuration options and a small event-based extension framework.',
+            image: `${baseUrl}img/inmemory.svg`,
+            imageAlign: 'top',
+            title: 'Extension framework',
+          },
+          {
+            content: 'BarbelHisto provides built-in transactional persistence support options and can be extended to integrate with other external data sources.',
             image: `${baseUrl}img/database.svg`,
             imageAlign: 'top',
-            title: 'Built-in persistence support',
+            title: 'Persistence support',
           },
         ]}
       </Block>

@@ -314,6 +314,18 @@
       "version-1.5.9-snapshotnotes": {
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
+      },
+      "version-1.6.1-events": {
+        "title": "Using BarbelHisto events",
+        "sidebar_label": "Using events"
+      },
+      "version-1.6.0-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.6.0-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
       }
     },
     "links": {
