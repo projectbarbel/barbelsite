@@ -4,9 +4,11 @@ title: Release Notes
 sidebar_label: Release Notes
 ---
 
-## Version 1.7.0-SNAPSHOT
-ea0ecb2 New test cases for Mode.BITEMPORAL</br>
-b4dbae2 Further test cases</br>
-971c044 Renamed test suite annotations</br>
-7af9e08 Removed logs</br>
-8273609 new snapshot pom 1.6.0-SNAPSHOT</br>
+## Version 1.6.2-SNAPSHOT
+661854e Further code quality improvements</br>
+b1ccfe5 Eliminate code smells from sonar cloud</br>
+0a94699 Default listener implementations to support persistent shadow collection out-of-the-box</br>
+55fb9e2 Collection Listener Test Suite</br>
+d02e622 Update README.md</br>
+55a09d9 AbstractListeners implemented to ease integration of new external data sources</br>
+15279e7 new snapshot pom 1.6.1-SNAPSHOT-SNAPSHOT</br>

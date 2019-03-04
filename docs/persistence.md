@@ -1,7 +1,7 @@
 ---
 id: persistence
-title: Adding persistence
-sidebar_label: Adding persistence
+title: Persistence integration basics
+sidebar_label: Persistence basics
 ---
 In `BarbelHisto` there are three flavors of persistence, you can choose the CqEngine persistence options, persistence integration using events, or you choose a custom persistence.
 ## CqEngine built-in persistence

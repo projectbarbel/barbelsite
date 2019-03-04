@@ -1,0 +1,28 @@
+{
+  "version-1.6.1-docs": {
+    "Documentation": [
+      "version-1.6.1-getstarted",
+      "version-1.6.1-bitemporal",
+      "version-1.6.1-timeshift",
+      "version-1.6.1-indexing",
+      "version-1.6.1-events",
+      "version-1.6.1-customization"
+    ],
+    "Persistence": [
+      "version-1.6.1-persistence",
+      "version-1.6.1-mongo"
+    ],
+    "Tutorials": [
+      "version-1.6.1-mongotutorial"
+    ],
+    "Project details": [
+      "version-1.6.1-about",
+      "version-1.6.1-license",
+      "version-1.6.1-download",
+      "version-1.6.1-support",
+      "version-1.6.1-acknowledge",
+      "version-1.6.1-repo",
+      "version-1.6.1-releasenotes"
+    ]
+  }
+}

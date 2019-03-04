@@ -1,32 +1,27 @@
 {
   "docs": {
-    "BarbelHisto": [
-      "about", 
-      "license", 
-      "download"
-    ],
     "Documentation": [
       "getstarted",
       "bitemporal",
       "timeshift",
-      "persistence",
       "indexing",
-      "events",
-      "customization"
+      "events"
     ],
     "Persistence": [
+      "persistence",
       "mongo"
     ],
     "Tutorials": [
       "mongotutorial"
     ],
-    "Project Details": [
+    "Project details": [
+      "about", 
+      "license", 
+      "download",
       "support", 
       "acknowledge", 
       "repo", 
-      "releasenotes"]
-  },
-  "docs-other": {
-    "Getting Started": ["doc4", "doc5"]
-  }
+      "releasenotes"
+    ]
+    }
 }

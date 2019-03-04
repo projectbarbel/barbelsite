@@ -146,19 +146,19 @@ class Index extends React.Component {
       <Block layout="threeColumn">
         {[
           {
-            content: 'BarbelHisto Core is a Java framework for bitemporal data management. It keeps track of two time dimensions: effective time and record time.',
+            content: 'BarbelHisto Core is a Java framework for audit-proof bitemporal data management. It keeps track of two time dimensions: effective time and record time.',
             image: `${baseUrl}img/bitemporal.svg`,
             imageAlign: 'top',
             title: 'Bitemporal data',
           },
           {
-            content: 'The core functionality is provided in a very small intuitive API in order to simplify the bi-temporal data processing for its users. ',
+            content: 'The core functionality is provided in a very small intuitive API in order to simplify the bi-temporal data processing for the users. ',
             image: `${baseUrl}img/getstarted.svg`,
             imageAlign: 'top',
-            title: 'Get started in minutes',
+            title: 'Simple API',
           },
           {
-            content: 'Built on proven community frameworks, BarbelHisto can be configured for extremely fast (batch) processing scenarios.',
+            content: 'Built on proven community frameworks, BarbelHisto can be configured for extremely fast processing scenarios.',
             image: `${baseUrl}img/examples.svg`,
             imageAlign: 'top',
             title: 'Fast processing',

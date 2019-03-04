@@ -31,9 +31,7 @@ function Help(props) {
       title: 'Get in contact on GitHub',
     },
     {
-      content: `Find out what's new with this project and see the [new releases.](${docUrl(
-        'release.html',
-      )})`,
+      content: `Find out what's new with this project and see the [new releases.](/versions)`,
       title: 'Stay up to date',
     },
   ];

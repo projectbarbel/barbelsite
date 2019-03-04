@@ -1,9 +1,10 @@
 ---
 id: version-1.5.8-persistence
-title: Adding persistence
-sidebar_label: Adding persistence
+title: Persistence integration basics
+sidebar_label: Persistence basics
 original_id: persistence
 ---
+
 In `BarbelHisto` there are three flavors of persistence, you can choose the CqEngine persistence options, persistence integration using events, or you choose a custom persistence.
 ## CqEngine built-in persistence
 `BarbelHisto` is based on [CqEngine collections](https://github.com/npgall/cqengine), so clients can use any persistence options currently available in CqEngine. The default persistence of `BarbelHisto` is `OnHeapPersistence`. To change that you add a custom backbone collection. If you want to add `DiskPersistence` you'd need to define the primary key attribute as described in the CqEngine documentation:
