@@ -366,6 +366,14 @@
       "version-1.6.2-releasenotes": {
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
+      },
+      "version-1.6.3-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.6.3-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
       }
     },
     "links": {
