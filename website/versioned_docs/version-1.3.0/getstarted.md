@@ -16,7 +16,7 @@ BarbelHisto<Employee> core = BarbelHistoBuilder.barbel().build();
 ## Store and retrieve a version
 You're ready to store instances of `Employee` to your `BarbelHisto` instance.
 ```java
-Employee employee = new Employee("somePersonelNumber", "Niklas", "Schlimm");
+Employee employee = new Employee("somePersonelNumber", "Martin", "Smith");
 core.save(employee, LocalDate.now(), LocalDate.MAX);
 ```
 In the `Employee.class` you need to specify the `@DocumentId` so that `BarbelHisto`can group versions to a document journal. In the `Employee.class` the `personnelNumber` is the document ID. 
@@ -83,7 +83,7 @@ If you retrieve versions now, you may become different states of the employee, s
 ```java
 effectiveEmployeeVersion = core.retrieveOne(BarbelQueries.effectiveNow(employee.getId()));
 effectiveIn10Days = core.retrieveOne(BarbelQueries.effectiveAt(employee.personnelNumber, LocalDate.now().plusDays(10)));
-assertTrue(effectiveEmployeeVersion.getLastname().equals("Schlimm"));
+assertTrue(effectiveEmployeeVersion.getLastname().equals("Smith"));
 assertTrue(effectiveIn10Days.getLastname().equals("changedLastName"));
 ```
 The `effectiveEmployeeVersion` is that version you've stored in the beginning of this tutorial, the `effectiveIn10Days` version will be the one with the changed last name. <br>

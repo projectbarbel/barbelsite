@@ -21,6 +21,10 @@
         "title": "Customizing BarbelHisto",
         "sidebar_label": "Customizing"
       },
+      "diskpersistence": {
+        "title": "Using disk persistence",
+        "sidebar_label": "Disk persistence"
+      },
       "download": {
         "title": "Download",
         "sidebar_label": "Download"
@@ -61,8 +65,8 @@
         "sidebar_label": "MongoDB tutorial"
       },
       "performance": {
-        "title": "Performance Analysis",
-        "sidebar_label": "Performance Analysis"
+        "title": "Configuring for Performance",
+        "sidebar_label": "Performance setups"
       },
       "persistence": {
         "title": "Persistence integration basics",
@@ -344,6 +348,22 @@
         "sidebar_label": "Release Notes"
       },
       "version-1.6.2-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.6.2-diskpersistence": {
+        "title": "Using disk persistence",
+        "sidebar_label": "Disk persistence"
+      },
+      "version-1.6.2-mongo": {
+        "title": "Integrating MongoDB",
+        "sidebar_label": "Integrating MongoDB"
+      },
+      "version-1.6.2-performance": {
+        "title": "Configuring for Performance",
+        "sidebar_label": "Performance setups"
+      },
+      "version-1.6.2-releasenotes": {
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
       }

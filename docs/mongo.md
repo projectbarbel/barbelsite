@@ -8,7 +8,7 @@ MongoDB can be integrated by using the supplied MongoDB event listeners from the
  
 [![Maven Central](https://img.shields.io/maven-central/v/org.projectbarbel/barbelhisto-persistence-mongo.svg)](https://search.maven.org/search?q=a:barbelhisto-persistence-mongo)
 
-## Listener registration 
+## Persistence listeners
 
 To register the listeners to `BarbelHisto`:
  ```java
@@ -49,3 +49,4 @@ BarbelHisto<DefaultPojo> mongoBackedHisto = BarbelHistoBuilder.barbel().withSync
                             .withSynchronousEventListener(loadingListener).withSynchronousEventListener(lockingListener);
 ```
 In this setup it is possible to access the version data from mutliple instances of `BarbelHisto` at the same time.
+

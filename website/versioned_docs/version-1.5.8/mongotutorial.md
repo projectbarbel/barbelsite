@@ -45,7 +45,7 @@ You can use your own `MongoClient` settings if you like. The `BarbelHisto` mongo
 
 With this setup you can now store and retrieve bitemporal data with a mongo collection as data source.
 ```java
-Client client = new Client("1234", "Mr.", "Schlimm", "Niklas", "some street 11", "somemail@projectbarbel.org", LocalDate.of(1973, 6, 20));
+Client client = new Client("1234", "Mr.", "Smith", "Martin", "some street 11", "somemail@projectbarbel.org", LocalDate.of(1973, 6, 20));
 mongoBackedHisto.save(client, LocalDate.now(), LocalDate.MAX);
 ```  
 Later in other sessions of your web application, you can retrieve the client using the `BarbelHisto.retrieve()` from MongoDB.

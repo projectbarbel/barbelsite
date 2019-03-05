@@ -9,7 +9,9 @@
     ],
     "Persistence": [
       "persistence",
-      "mongo"
+      "diskpersistence",
+      "mongo",
+      "performance"
     ],
     "Tutorials": [
       "mongotutorial"
