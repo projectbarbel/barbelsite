@@ -11,6 +11,16 @@ If you want to make MongoDB work with `BarbelHisto` you need two maven dependenc
 <br>
 <a href="https://search.maven.org/search?q=g:%22org.projectbarbel%22%20AND%20a:%22barbelhisto-persistence-mongo%22"><img src="https://img.shields.io/maven-central/v/org.projectbarbel/barbelhisto-persistence-mongo.svg?label=Maven%20Central" align="left">Mongo persistence listeners</a>
 
+And you nee the [MongoDB Java Driver](https://mongodb.github.io/mongo-java-driver/) 3.10.1 or higher.
+
+```
+<dependency>
+	<groupId>org.mongodb</groupId>
+	<artifactId>mongodb-driver-sync</artifactId>
+	<version>3.10.1</version>
+</dependency>
+```
+
 Develop a Pojo, like this one:
 ```java
 public class Client {

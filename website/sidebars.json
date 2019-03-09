@@ -16,6 +16,9 @@
     "Tutorials": [
       "mongotutorial"
     ],
+    "Example applications": [
+      "springboot"
+    ],
     "Project details": [
       "about", 
       "license", 

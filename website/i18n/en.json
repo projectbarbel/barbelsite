@@ -88,6 +88,10 @@
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
       },
+      "springboot": {
+        "title": "BarbelHisto as service helper in Spring Boot",
+        "sidebar_label": "Spring Boot helper example"
+      },
       "support": {
         "title": "Getting Support",
         "sidebar_label": "Getting Support"
@@ -374,6 +378,26 @@
       "version-1.6.3-snapshotnotes": {
         "title": "Release Notes",
         "sidebar_label": "Release Notes"
+      },
+      "version-1.7.0-mongo": {
+        "title": "Integrating MongoDB",
+        "sidebar_label": "Integrating MongoDB"
+      },
+      "version-1.7.0-mongotutorial": {
+        "title": "Setting up MongoDB in 5 minutes",
+        "sidebar_label": "MongoDB tutorial"
+      },
+      "version-1.7.0-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.7.0-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.7.0-springboot": {
+        "title": "BarbelHisto as service helper in Spring Boot",
+        "sidebar_label": "Spring Boot helper example"
       }
     },
     "links": {
@@ -384,6 +408,7 @@
       "Documentation": "Documentation",
       "Persistence": "Persistence",
       "Tutorials": "Tutorials",
+      "Example applications": "Example applications",
       "Project details": "Project details",
       "BarbelHisto": "BarbelHisto",
       "Project Details": "Project Details",
