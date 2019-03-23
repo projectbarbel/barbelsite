@@ -6,6 +6,12 @@ sidebar_label: Get started with POJOs
 
 [See this test case](https://github.com/projectbarbel/barbelhisto-core/blob/master/src/test/java/org/projectbarbel/histo/BarbelHistoCore_StdPojoUsage_Test.java) to get the complete code for this tutorial.
 > **NOTE**: in this turorial we use `BarbelHisto`s default processing mode, which is `BarbelMode.POJO`. There is another mode called `BarbelMode.BITEMPORAL` if proxying does not work out on your business classes. 
+
+## Get the latest version
+First, get your latest version of `BarbelHisto`:
+
+<a href="https://search.maven.org/search?q=g:%22org.projectbarbel%22%20AND%20a:%22barbelhisto%22"><img src="https://img.shields.io/maven-central/v/org.projectbarbel/barbelhisto.svg?label=barbelhisto" align="left"/><br>
+
 ## Create an instance of BarbelHisto
 Create an instance of `BarbelHisto`.
 ```java

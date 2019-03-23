@@ -8,13 +8,13 @@ MongoDB can be integrated by using the supplied MongoDB event listeners from the
  
 [![Maven Central](https://img.shields.io/maven-central/v/org.projectbarbel/barbelhisto-persistence-mongo.svg)](https://search.maven.org/search?q=a:barbelhisto-persistence-mongo)
 
-You nee the [MongoDB Java Driver](https://mongodb.github.io/mongo-java-driver/) 3.10.1 or higher.
+The mongo package is tested [MongoDB Java Driver](https://mongodb.github.io/mongo-java-driver/) 3.6.4
 
 ```
 <dependency>
-    <groupId>org.mongodb</groupId>
-    <artifactId>mongodb-driver-sync</artifactId>
-    <version>3.10.1</version>
+	<groupId>org.mongodb</groupId>
+	<artifactId>mongodb-driver</artifactId>
+	<version>3.6.4</version>
 </dependency>
 ```
 

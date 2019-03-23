@@ -10,6 +10,7 @@
     "Persistence": [
       "persistence",
       "diskpersistence",
+      "helper",
       "mongo",
       "performance"
     ],
@@ -17,7 +18,8 @@
       "mongotutorial"
     ],
     "Example applications": [
-      "springboot"
+      "springboot",
+      "springbootlistener"
     ],
     "Project details": [
       "about", 

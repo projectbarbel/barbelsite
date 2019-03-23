@@ -1,11 +1,11 @@
 ---
 id: version-1.7.0-springboot
 title: BarbelHisto as service helper in Spring Boot
-sidebar_label: Spring Boot helper example
+sidebar_label: Spring Boot service helper
 original_id: springboot
 ---
 
-Follwing example demonstrates how to use `BarbelHisto` in a Spring Boot application. There are two fundamental alternatives to integrate `BarbelHisto` into Spring Boot: using `BarbelHisto` as a helper class in your services, or you use `BarbelHisto` event listener persistence within Spring Boot services. This example demonstrates the simple helper class alternative.
+The following example demonstrates how to use `BarbelHisto` in a Spring Boot application. There are two fundamental alternatives to integrate `BarbelHisto` into Spring Boot: using `BarbelHisto` as a helper class in your services, or you use `BarbelHisto` event listener persistence within Spring Boot services. This example demonstrates the simple helper class alternative.
 
 The Spring Boot example application can be found [here in the examples repository](https://github.com/projectbarbel/barbelhisto-samples/tree/master/springboot-helper).
 
@@ -79,7 +79,7 @@ public interface CustomerRepository extends MongoRepository<Customer, String> {
 The method `findByClientId` draws the complete version data for a given `clientId`.
 The `findByClientIdAndBitemporalStampRecordTimeState` draws active or inactive versions using the `BitemporalStamp` we've applied to the `Customer` object.
 
-## The CustomerService using BarbelHisto helper
+## The CustomerService using a BarbelHisto helper
 
 Here is the service implementation that uses `BarbelHisto` as helper class for bi-temporal data.
 

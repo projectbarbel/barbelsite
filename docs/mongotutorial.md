@@ -6,18 +6,17 @@ sidebar_label: MongoDB tutorial
 If you want to make MongoDB work with `BarbelHisto` you need two maven dependencies to get started.
 
 
-<a href="https://search.maven.org/search?q=g:%22org.projectbarbel%22%20AND%20a:%22barbelhisto%22"><img src="https://img.shields.io/maven-central/v/org.projectbarbel/barbelhisto.svg?label=Maven%20Central" align="left">BarbelHisto core</a>
+<a href="https://search.maven.org/search?q=g:%22org.projectbarbel%22%20AND%20a:%22barbelhisto%22"><img src="https://img.shields.io/maven-central/v/org.projectbarbel/barbelhisto.svg?label=barbelhisto" align="left"></a>
 <br>
-<a href="https://search.maven.org/search?q=g:%22org.projectbarbel%22%20AND%20a:%22barbelhisto-persistence-mongo%22"><img src="https://img.shields.io/maven-central/v/org.projectbarbel/barbelhisto-persistence-mongo.svg?label=Maven%20Central" align="left">Mongo persistence listeners</a>
-
-You nee the [MongoDB Java Driver](https://mongodb.github.io/mongo-java-driver/) 3.10.1 or higher.
+<a href="https://search.maven.org/search?q=g:%22org.projectbarbel%22%20AND%20a:%22barbelhisto-persistence-mongo%22"><img src="https://img.shields.io/maven-central/v/org.projectbarbel/barbelhisto-persistence-mongo.svg?label=barbelhisto-persistence-mongo" align="left"></a>
+<br>
+The mongo package is tested [MongoDB Java Driver](https://mongodb.github.io/mongo-java-driver/) 3.6.4
 
 ```
 <dependency>
 	<groupId>org.mongodb</groupId>
-	<artifactId>mongodb-driver-sync</artifactId>
-	<version>3.10.1</version>
-	<scope>provided</scope>
+	<artifactId>mongodb-driver</artifactId>
+	<version>3.6.4</version>
 </dependency>
 ```
 

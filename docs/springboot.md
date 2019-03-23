@@ -4,7 +4,7 @@ title: BarbelHisto as service helper in Spring Boot
 sidebar_label: Spring Boot helper example
 ---
 
-Follwing example demonstrates how to use `BarbelHisto` in a Spring Boot application. There are two fundamental alternatives to integrate `BarbelHisto` into Spring Boot: using `BarbelHisto` as a helper class in your services, or you use `BarbelHisto` event listener persistence within Spring Boot services. This example demonstrates the simple helper class alternative.
+The following example demonstrates how to use `BarbelHisto` in a Spring Boot application. There are two fundamental alternatives to integrate `BarbelHisto` into Spring Boot: using `BarbelHisto` as a helper class in your services, or you use `BarbelHisto` event listener persistence within Spring Boot services. This example demonstrates the simple helper class alternative.
 
 The Spring Boot example application can be found [here in the examples repository](https://github.com/projectbarbel/barbelhisto-samples/tree/master/springboot-helper).
 
@@ -34,13 +34,14 @@ public class Customer implements Bitemporal {
 
 }    
 ```
+The `@Id` annotation is a spring annotation which uniquely identifies an object in the data source you use. We will use a MongoDB repository in this example. The `@DocumentId`  is a BarbelHisto annotation to identify the functional identifier of the business object. A certain customer is uniquely identified by his corresponding `clientId`.
 
 Notice that we use `BarbelMode.BITEMPORAL` in this setup, so the `Customer` implements the `Bitemporal` interface.
-The `BitemporalStamp` will contain the version data. When users of `BarbelHisto` use custom persistence it can be more convenient to use `BarbelHisto` in the `BarbelMode.BITEMPORAL`. No proxying magic will be applied to any objects. And objevcts are stored as they are, just with an additional `BitemporalStamp`. This mode is very explicit and straight forward.
+The `BitemporalStamp` will contain the version data. When users of `BarbelHisto` use custom persistence it can be more convenient to use `BarbelHisto` in the `BarbelMode.BITEMPORAL`. No proxying magic will be applied to any objects. And objects are stored as they are, just with an additional `BitemporalStamp`. This mode is very explicit and straight forward.
 
 ## Spring boot conversion classes
 
-We need to converters, cause Spring Boot is claiming conversion issues with `ZonedDateTime`.
+We need two converters, cause Spring Boot is claiming conversion issues with `ZonedDateTime`.
 Use converters like this one in your application:
 
 ```java
@@ -78,7 +79,7 @@ public interface CustomerRepository extends MongoRepository<Customer, String> {
 The method `findByClientId` draws the complete version data for a given `clientId`.
 The `findByClientIdAndBitemporalStampRecordTimeState` draws active or inactive versions using the `BitemporalStamp` we've applied to the `Customer` object.
 
-## The CustomerService using BarbelHisto helper
+## The CustomerService using a BarbelHisto helper
 
 Here is the service implementation that uses `BarbelHisto` as helper class for bi-temporal data.
 
@@ -123,7 +124,7 @@ This is the minimal setup when you'd use `BarbelHisto`. In the example the servi
 
 Notice, that step 3 causes some active records to be inactivated and new active records are created for the new effective periods. We need to forward those changes to the backend `MongoCollection` now. Currently, only the `BarbelHisto` helper knows about the changes. We can propagate the changes using the `BitemporalUpdate`return value of the `save`-operation.
 
-4. First save inactivated records. The state of these existing(!) records changed. By performin a save operation the corresponding backend records are updates, i.e. inactivated.
+4. First save inactivated records. The state of these existing(!) records changed. By performing a save operation the corresponding backend records are updated, i.e. inactivated.
 5. As a last step, insert the new active records created by the bi-temporal update. An insert needs to be prepared. The new active records were copied from existing ones, therefore they carry a wrong ID in the `Customer.id` field. Before we insert these records into the `MongoCollection`, we need to clear the IDs. Afterwards records can be inserted as new records.
 
 This is what you need to do in your service when you use `BarbelHisto` as helper in your backend services.

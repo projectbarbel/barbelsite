@@ -40,6 +40,10 @@
         "title": "Get started with POJOs",
         "sidebar_label": "Get started with POJOs"
       },
+      "helper": {
+        "title": "BarbelHisto as Helper Class",
+        "sidebar_label": "Persistence Helper"
+      },
       "indexing": {
         "title": "Adding indexes",
         "sidebar_label": "Adding indexes"
@@ -91,6 +95,10 @@
       "springboot": {
         "title": "BarbelHisto as service helper in Spring Boot",
         "sidebar_label": "Spring Boot helper example"
+      },
+      "springbootlistener": {
+        "title": "BarbelHisto in Spring Boot using event-driven persistence",
+        "sidebar_label": "Spring Boot listener example"
       },
       "support": {
         "title": "Getting Support",
@@ -397,7 +405,35 @@
       },
       "version-1.7.0-springboot": {
         "title": "BarbelHisto as service helper in Spring Boot",
+        "sidebar_label": "Spring Boot service helper"
+      },
+      "version-1.7.1-getstarted": {
+        "title": "Get started with POJOs",
+        "sidebar_label": "Get started with POJOs"
+      },
+      "version-1.7.1-helper": {
+        "title": "BarbelHisto as Helper Class",
+        "sidebar_label": "Persistence Helper"
+      },
+      "version-1.7.1-mongotutorial": {
+        "title": "Setting up MongoDB in 5 minutes",
+        "sidebar_label": "MongoDB tutorial"
+      },
+      "version-1.7.1-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.7.1-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-1.7.1-springboot": {
+        "title": "BarbelHisto as service helper in Spring Boot",
         "sidebar_label": "Spring Boot helper example"
+      },
+      "version-1.7.1-springbootlistener": {
+        "title": "BarbelHisto in Spring Boot using event-driven persistence",
+        "sidebar_label": "Spring Boot listener example"
       }
     },
     "links": {
