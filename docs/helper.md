@@ -4,9 +4,9 @@ title: BarbelHisto as Helper Class
 sidebar_label: Persistence Helper
 ---
 
-The easiest way to use BarbelHisto is to integrate it as helper class for managing your persistent bi-temporal data. This alterantive is described in the [Spring Boot Application helper example](springboot.md).
+The easiest way to use BarbelHisto is to integrate it as helper class for managing your persistent bi-temporal data. This alternative is described in the [Spring Boot Application helper example](springboot.md).
 
-The idea is that yuo use the return value of the `save()` operation, which is an instance of `BitemporalUpdate`. This instance contains all updates happended by the save operation. It is these updates that you need to store to your database.
+The idea is that you use the return value of the `save()` operation, which is an instance of `BitemporalUpdate`. This instance contains all updates happended by the save operation. It is these updates that you need to store to your database.
 
 Here is the service implementation that uses `BarbelHisto` as helper class for bi-temporal data.
 
@@ -17,7 +17,7 @@ public class CustomerService {
     @Autowired
     private CustomerRepository customerRepository;
 
-    public void saveCustomer(Customer customer, LocalDate from, LocalDate until) {
+    public void saveCustomer(Customer customer, ZonedDateTime from, ZonedDateTime until) {
 
         // (1) create BarbelHisto helper instance
         BarbelHisto<Customer> bitemporalHelper = BarbelHistoBuilder.barbel().withMode(BarbelMode.BITEMPORAL).build();

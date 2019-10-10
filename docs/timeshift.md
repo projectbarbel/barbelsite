@@ -15,7 +15,7 @@ Document-ID: somePersonelNumber
 ``` 
 When you want to see the journal that was active **before** you've made that second change on February 18th (see CreatedAt), you just receive that journal by using `BarbelHisto`s timeshift function:
 ```java
-DocumentJournal journal = core.timeshift("somePersonelNumber", LocalDate.of(2019,2,17)); // yesterday in our scenarion was 2019, Febuary 17th
+DocumentJournal journal = core.timeshift("somePersonelNumber", ZonedDateTime.parse("2019-02-17T00:00:00Z")); // yesterday in our scenarion was 2019, Febuary 17th
 ```
 The journal you receive in the `DocumentJournal` looks as follows:
 ``` 

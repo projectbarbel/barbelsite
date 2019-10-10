@@ -434,6 +434,38 @@
       "version-1.7.1-springbootlistener": {
         "title": "BarbelHisto in Spring Boot using event-driven persistence",
         "sidebar_label": "Spring Boot listener example"
+      },
+      "version-2.0-getstarted": {
+        "title": "Get started with POJOs",
+        "sidebar_label": "Get started with POJOs"
+      },
+      "version-2.0-helper": {
+        "title": "BarbelHisto as Helper Class",
+        "sidebar_label": "Persistence Helper"
+      },
+      "version-2.0-persistence": {
+        "title": "Persistence integration basics",
+        "sidebar_label": "Persistence basics"
+      },
+      "version-2.0-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-2.0-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-2.0-springboot": {
+        "title": "BarbelHisto as service helper in Spring Boot",
+        "sidebar_label": "Spring Boot helper example"
+      },
+      "version-2.0-springbootlistener": {
+        "title": "BarbelHisto in Spring Boot using event-driven persistence",
+        "sidebar_label": "Spring Boot listener example"
+      },
+      "version-2.0-timeshift": {
+        "title": "Timeshifts with BarbelHisto",
+        "sidebar_label": "Journey through time"
       }
     },
     "links": {

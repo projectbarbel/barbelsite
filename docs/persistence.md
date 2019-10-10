@@ -139,7 +139,7 @@ public void handleInserts(InsertBitemporalEvent event) {
 To get the context information clients just need to catch the `HistoEventFailedException`:
 ```java
 try {
-    core.save(pojo, LocalDate.now().plusDays(1), LocalDate.MAX)
+    core.save(pojo, ZonedDateTime.now().plusDays(1), EffectiveDate.INFINITE)
 } catch (HistoEventFailedException exception) {
     String contextData = exception.getEvent().getEventContext().get("errorContext");
     // do some recovery actions based on context data
