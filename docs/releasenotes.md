@@ -4,12 +4,8 @@ title: Release Notes
 sidebar_label: Release Notes
 ---
 
-## Version 2.0
-0b45867 Changes to tests after Mongo Module DateTime update</br>
-56553dc Javadoc plugin fix</br>
-a0c8b8d Added parameter JavaDoc for DocumentJournal</br>
-10fe5da Added Java doc for T in BarbelQueries</br>
-316b465 Clean compile</br>
-bad118e NBAU datetime and green tests</br>
-47269cb Add support for DateTime on EffectivePeriod</br>
-738005b new snapshot pom 1.7.2-SNAPSHOT</br>
+## Version 2.0.1
+b286831 ensure integrity on sub milli save operations</br>
+38d7201 Nano/milli test cases added</br>
+3a30231 Removed silly java version file</br>
+da72303 new snapshot pom 2.0.1-SNAPSHOT-SNAPSHOT</br>

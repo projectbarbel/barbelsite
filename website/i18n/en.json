@@ -56,6 +56,10 @@
         "title": "License",
         "sidebar_label": "License"
       },
+      "millis": {
+        "title": "Version 2.0 on milliseconds",
+        "sidebar_label": "Effective Time Granularity"
+      },
       "modes": {
         "title": "Pojo and Bitemporal support",
         "sidebar_label": "Pojo and Bitemporal support"
@@ -434,6 +438,18 @@
       "version-1.7.1-springbootlistener": {
         "title": "BarbelHisto in Spring Boot using event-driven persistence",
         "sidebar_label": "Spring Boot listener example"
+      },
+      "version-2.0.1-millis": {
+        "title": "Version 2.0 on milliseconds",
+        "sidebar_label": "Effective Time Granularity"
+      },
+      "version-2.0.1-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-2.0.1-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
       },
       "version-2.0-getstarted": {
         "title": "Get started with POJOs",

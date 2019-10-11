@@ -1,0 +1,35 @@
+{
+  "version-2.0.1-docs": {
+    "Documentation": [
+      "version-2.0.1-getstarted",
+      "version-2.0.1-millis",
+      "version-2.0.1-bitemporal",
+      "version-2.0.1-timeshift",
+      "version-2.0.1-indexing",
+      "version-2.0.1-events"
+    ],
+    "Persistence": [
+      "version-2.0.1-persistence",
+      "version-2.0.1-diskpersistence",
+      "version-2.0.1-helper",
+      "version-2.0.1-mongo",
+      "version-2.0.1-performance"
+    ],
+    "Tutorials": [
+      "version-2.0.1-mongotutorial"
+    ],
+    "Example applications": [
+      "version-2.0.1-springboot",
+      "version-2.0.1-springbootlistener"
+    ],
+    "Project details": [
+      "version-2.0.1-about",
+      "version-2.0.1-license",
+      "version-2.0.1-download",
+      "version-2.0.1-support",
+      "version-2.0.1-acknowledge",
+      "version-2.0.1-repo",
+      "version-2.0.1-releasenotes"
+    ]
+  }
+}

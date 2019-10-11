@@ -2,6 +2,7 @@
   "docs": {
     "Documentation": [
       "getstarted",
+      "millis",
       "bitemporal",
       "timeshift",
       "indexing",
