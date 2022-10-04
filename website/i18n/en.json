@@ -482,6 +482,14 @@
       "version-2.0-timeshift": {
         "title": "Timeshifts with BarbelHisto",
         "sidebar_label": "Journey through time"
+      },
+      "version-2.2.0-releasenotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
+      },
+      "version-2.2.0-snapshotnotes": {
+        "title": "Release Notes",
+        "sidebar_label": "Release Notes"
       }
     },
     "links": {
